@@ -1,84 +1,72 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#0c5260"><title>濟州島 · 4 日自駕</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12384b">
+  <title>JEJU · 4日自駕行程</title>
   <style>
-    :root{--ink:#15343b;--muted:#678087;--sea:#0c6672;--sand:#fff8eb;--coral:#ee765c;--line:#dce9e7;--card:#fff;--bg:#f4f8f6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;line-height:1.48}a{color:inherit}.hero{padding:54px 22px 26px;background:linear-gradient(145deg,#084a5a,#138092 56%,#69b8ad);color:#fff}.eyebrow{font-size:12px;letter-spacing:.12em;font-weight:700;opacity:.8}.hero h1{margin:7px 0 4px;font-size:35px;letter-spacing:.03em}.hero p{margin:0;opacity:.93}.pillrow{display:flex;gap:8px;overflow:auto;padding:18px 0 0}.pill{flex:none;border:1px solid #ffffff73;border-radius:99px;padding:7px 11px;font-size:13px}nav{position:sticky;top:0;z-index:3;display:flex;overflow-x:auto;gap:5px;padding:10px 14px;background:#fffffff2;backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}nav a{flex:none;text-decoration:none;border-radius:99px;padding:8px 10px;font-size:13px;font-weight:700;color:var(--sea)}main{max-width:700px;margin:auto;padding:18px 14px 50px}.notice{padding:13px 15px;background:#fff2d8;border-radius:15px;color:#744e00;font-size:14px}.day{scroll-margin-top:58px;margin-top:28px}.dayhead{display:flex;align-items:end;justify-content:space-between;margin:0 4px 12px}.dayhead h2{font-size:23px;margin:0}.dayhead span{font-size:13px;color:var(--muted)}.route{position:relative;padding-left:30px}.route:before{content:"";position:absolute;left:10px;top:15px;bottom:12px;border-left:2px dashed #9bc9c5}.stop{position:relative;margin:0 0 10px;padding:13px 13px 13px 16px;background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:0 3px 14px #0b4b512e}.stop:before{content:"";position:absolute;left:-25px;top:21px;width:11px;height:11px;background:#f9ca66;border:3px solid var(--bg);border-radius:50%;z-index:1}.stop.drive:before{background:var(--sea)}.time{font-size:13px;font-weight:800;color:var(--sea)}.title{font-size:16px;font-weight:800;margin:2px 0}.detail{font-size:13px;color:var(--muted)}.tag{display:inline-block;margin:7px 5px 0 0;padding:3px 7px;border-radius:6px;background:#e8f4f2;color:#24646a;font-size:11px;font-weight:700}.warn{background:#fff0ed;border-color:#f5c1b7}.warn .time{color:#be4c38}.map{float:right;margin-left:8px;text-decoration:none;font-size:12px;font-weight:800;color:var(--sea);border:1px solid #acd4d0;border-radius:7px;padding:5px 7px}.section{margin-top:35px;scroll-margin-top:58px}.section h2{margin:0 4px 12px;font-size:23px}.grid{display:grid;gap:10px}.rec{background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px}.rec h3{font-size:16px;margin:0 0 5px}.rec p{font-size:13px;color:var(--muted);margin:0}.rec b{color:var(--coral)}.check{list-style:none;padding:0;margin:0}.check li{padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}.check li:last-child{border:0}.check li:before{content:"✓";display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#dbf0e9;color:#18735f;font-weight:800;margin-right:9px}.sources{font-size:12px;color:var(--muted);padding:5px 4px 0}.sources a{color:var(--sea)}footer{text-align:center;color:var(--muted);font-size:12px;padding:25px 0 0}.drive .title{color:var(--sea)}
+    :root{--ink:#12384b;--sea:#dff3f2;--cream:#fffaf2;--coral:#f46b58;--sun:#ffd36a;--muted:#63808d;--line:#d9e5e6}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;line-height:1.45}a{color:inherit}.hero{padding:calc(28px + env(safe-area-inset-top)) 20px 25px;background:linear-gradient(145deg,#12384b,#1e6774);color:white}.eyebrow{font-size:12px;letter-spacing:.14em;font-weight:800;color:#a9e4de}.hero h1{font-size:34px;line-height:1.04;letter-spacing:-1.5px;margin:8px 0 10px}.hero p{margin:0;color:#d5eef0;font-size:14px}.tabs{position:sticky;top:0;z-index:4;display:flex;overflow:auto;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 10px #12384b12}.tabs a{flex:0 0 auto;padding:13px 14px;text-decoration:none;font-size:13px;font-weight:750}.tabs a:first-child{color:var(--coral)}main{max-width:640px;margin:auto;padding:18px 14px 48px}.notice{background:#fff0d5;border-left:4px solid var(--sun);border-radius:10px;padding:12px 13px;font-size:13px;margin:0 0 22px}.day{scroll-margin-top:55px;margin:0 0 28px}.day-head{display:flex;gap:12px;align-items:center;margin:0 2px 12px}.badge{width:44px;height:44px;border-radius:15px;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:900;font-size:12px;line-height:1.1;text-align:center}.day-head h2{font-size:20px;margin:0;letter-spacing:-.5px}.day-head p{font-size:12px;margin:2px 0 0;color:var(--muted)}.timeline{position:relative;padding-left:22px}.timeline:before{content:"";position:absolute;left:6px;top:14px;bottom:14px;width:2px;background:#c9dfdf}.stop{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;margin:0 0 10px;padding:13px 13px 12px;box-shadow:0 3px 12px #12384b0b}.stop:before{content:"";position:absolute;left:-21px;top:21px;width:11px;height:11px;border:3px solid var(--cream);border-radius:50%;background:var(--coral)}.time{font-variant-numeric:tabular-nums;color:var(--coral);font-size:12px;font-weight:850}.title{font-size:16px;font-weight:800;margin:2px 0}.meta{font-size:12px;color:var(--muted);margin:0 0 9px}.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:0;border-radius:8px;padding:7px 9px;background:#eef7f7;color:var(--ink);font-size:12px;font-weight:750;text-decoration:none}.chip.map{background:var(--ink);color:#fff}.chip.insta{background:#fff1ef;color:#a34439}.choice{border:1px dashed #e6a061;background:#fff7ec;border-radius:14px;padding:11px 12px;margin:0 0 10px;font-size:13px}.choice strong{color:#a44e24}.alert{background:#fff0ef;border:1px solid #ffc8bf;border-radius:14px;padding:13px;margin:0 0 10px;font-size:13px}.alert b{color:#b33e31}.guide{margin-top:6px;background:#12384b;color:#fff;border-radius:20px;padding:20px 16px}.guide h2{font-size:20px;margin:0 0 4px}.guide>p{font-size:13px;color:#cbe9e7;margin:0 0 14px}.recommend{background:#fff;border-radius:14px;padding:13px;margin:9px 0;color:var(--ink)}.recommend h3{font-size:15px;margin:0 0 4px}.recommend p{font-size:12px;color:var(--muted);margin:0 0 9px}.rec-links{display:flex;gap:7px;flex-wrap:wrap}.rec-links a{font-size:12px;font-weight:800;color:#116a73}.footer{font-size:11px;color:#cbe9e7;margin:16px 1px 0}.footer a{color:#fff}.muted{color:var(--muted)}
   </style>
 </head>
 <body>
-<header class="hero"><div class="eyebrow">JEJU SELF-DRIVE · 18–21 SEP</div><h1>濟州島，慢慢開</h1><p>4 天 3 夜｜海岸、咖啡、牛島與市場</p><div class="pillrow"><span class="pill">✈️ 06:00 抵達</span><span class="pill">🚗 自駕行程</span><span class="pill">🎭 9/20 16:30 亂打秀</span></div></header>
-<nav><a href="#d1">9/18</a><a href="#d2">9/19</a><a href="#d3">9/20</a><a href="#d4">9/21</a><a href="#eat">吃什麼</a><a href="#buy">必買必玩</a><a href="#tips">出發前</a></nav>
-<main>
-<div class="notice">⚠️ 營業時間、休息日與牛島船班可能變動；出發前一晚請再以地圖／官方頁面確認。第 3 天請把 <b>13:00 離開牛島</b>當作死線。</div>
-
-<section class="day" id="d1"><div class="dayhead"><h2>DAY 1 · 9/18</h2><span>機場 → 西歸浦｜舒服走</span></div><div class="route">
-<article class="stop"><div class="time">06:00–08:00</div><div class="title">✈️ 抵達濟州機場・入境／行李／租車</div><div class="detail">預留約 2 小時。備好國際駕照、護照與租車單。</div></article>
-<article class="stop drive"><div class="time">08:00 · 車程 35–45 分</div><div class="title">🚗 機場 → Haegigae Cafe</div></article>
-<article class="stop"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Haegigae+Cafe+Jeju">地圖</a><div class="time">09:00–10:00</div><div class="title">☕ Haegigae Cafe 早餐</div><div class="detail">依原行程：09:00 開門。</div></article>
-<article class="stop drive"><div class="time">10:00 · 車程 30–35 分</div><div class="title">🚗 前往三姓穴海鮮湯</div></article>
-<article class="stop"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=%EC%82%BC%EC%84%B1%ED%98%88%ED%95%B4%EB%AC%BC%ED%83%95+%EC%A0%9C%EC%A3%BC">地圖</a><div class="time">10:35–11:30</div><div class="title">🦐 三姓穴海鮮湯 本店</div><div class="detail">海鮮湯午餐・約 55 分</div></article>
-<article class="stop drive"><div class="time">11:30 · 車程 45–55 分</div><div class="title">🚗 前往山茶花之丘</div></article>
-<article class="stop"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Camellia+Hill+Jeju">地圖</a><div class="time">12:20–14:00</div><div class="title">🌺 山茶花之丘</div><div class="detail">拍照散步 1 小時 40 分；別晚於 14:00 離開。</div></article>
-<article class="stop drive"><div class="time">14:00 · 車程 20–25 分</div><div class="title">🚗 前往橘花閣樓</div></article>
-<article class="stop"><div class="time">14:25–15:30</div><div class="title">🍊 橘花閣樓咖啡廳</div><div class="detail">下午茶・約 1 小時</div></article>
-<article class="stop drive"><div class="time">15:30 · 車程 15–20 分</div><div class="title">🚗 前往西歸浦偶來市場</div></article>
-<article class="stop"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Seogwipo+Maeil+Olle+Market">地圖</a><div class="time">15:50–18:30</div><div class="title">🛍️ 西歸浦偶來市場＋晚餐</div><div class="detail">紫菜飯捲、麻糬、夜市小吃。<span class="tag">必買：柑橘製品</span><span class="tag">必吃：黑豬肉／海鮮</span></div></article>
-<article class="stop drive"><div class="time">18:30 · 車程 10–30 分</div><div class="title">🚗 前往濟州 Memory 泳池別墅・Check-in</div></article>
-</div></section>
-
-<section class="day" id="d2"><div class="dayhead"><h2>DAY 2 · 9/19</h2><span>9.81 → 涯月 → 市區</span></div><div class="route">
-<article class="stop"><div class="time">07:30–08:30</div><div class="title">🏪 起床・超商早餐</div></article><article class="stop drive"><div class="time">08:30 · 車程 40–60 分</div><div class="title">🚗 住宿 → 9.81 Park</div></article>
-<article class="stop"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=9.81+Park+Jeju">地圖</a><div class="time">09:30–12:00</div><div class="title">🏎️ 9.81 Park</div><div class="detail">無動力賽車・預留 2.5 小時。</div></article><article class="stop drive"><div class="time">12:00 · 車程 15–25 分</div><div class="title">🚗 → 帶魚館涯月海岸道路店</div></article>
-<article class="stop"><div class="time">12:25–13:30</div><div class="title">🐟 白帶魚午餐</div><div class="detail">帶魚館涯月海岸道路店</div></article><article class="stop drive"><div class="time">13:30 · 車程 10–20 分</div><div class="title">🚗 → 涯月咖啡</div></article>
-<article class="stop"><div class="time">13:50–15:00</div><div class="title">☕ Tribe <em>或</em> Cafe Comma</div><div class="detail">二選一，別兩間都跑，才不會壓縮海邊與入住時間。</div></article><article class="stop drive"><div class="time">15:00 · 車程 10–20 分</div><div class="title">🚗 → 海豚公路</div></article>
-<article class="stop"><div class="time">15:20–15:50</div><div class="title">🐬 海豚公路</div><div class="detail">看海碰運氣；看到海豚請保持距離。</div></article><article class="stop drive"><div class="time">15:50 · 車程 10–20 分</div><div class="title">🚗 → Villa Check-in</div></article>
-<article class="stop"><div class="time">16:10–17:00</div><div class="title">🏠 入住＋休息</div></article><article class="stop drive"><div class="time">17:00 · 車程 30–40 分</div><div class="title">🚗 → 小馬燈塔＋彩虹公路</div></article>
-<article class="stop"><div class="time">17:40–18:20</div><div class="title">🐴 小馬燈塔＋彩虹公路</div></article><article class="stop drive"><div class="time">18:20 · 車程 15–25 分</div><div class="title">🚗 → 豬肉一條街</div></article>
-<article class="stop"><div class="time">18:45–20:00</div><div class="title">🥩 黑豬肉晚餐</div><div class="detail">搭配 멜젓（鯷魚醬）是濟州經典吃法。</div></article><article class="stop"><div class="time">20:00–21:00</div><div class="title">🛍️ 東門市場・BHC 宵夜（看體力）</div></article>
-</div></section>
-
-<section class="day" id="d3"><div class="dayhead"><h2>DAY 3 · 9/20</h2><span>牛島 → 16:30 亂打秀｜看手錶</span></div><div class="route">
-<article class="stop"><div class="time">06:50–07:10</div><div class="title">🌅 起床・出發</div></article><article class="stop drive"><div class="time">07:10 · 車程 50–70 分</div><div class="title">🚗 Villa → London Bagel</div></article><article class="stop"><div class="time">08:00–09:00</div><div class="title">🥯 London Bagel Museum Jeju</div><div class="detail">開門就到，避開排隊。</div></article><article class="stop drive"><div class="time">09:00 · 車程 25–35 分</div><div class="title">🚗 → 城山港</div></article>
-<article class="stop"><div class="time">09:40–10:00</div><div class="title">🚢 城山港・確認船班／搭船</div><div class="detail">海況是最大變數；前晚與當日早上都要確認。</div></article><article class="stop"><div class="time">10:15–13:00</div><div class="title">🏝️ 牛島</div><div class="detail">花生冰淇淋必吃；午餐請簡單吃，勿拖延。</div></article>
-<article class="stop warn"><div class="time">13:00 · 絕對離開牛島</div><div class="title">🚨 回城山港 → 取車出發</div><div class="detail">13:30 上路，才有 14:30–15:30 的劇場緩衝。</div></article><article class="stop drive"><div class="time">13:30 · 車程約 1 小時</div><div class="title">🚗 城山港 → 亂打劇場</div></article><article class="stop warn"><div class="time">15:30</div><div class="title">🎭 入場・16:30 濟州亂打秀</div><div class="detail">務必提早到，避免遲到影響座位。</div></article>
-<article class="stop"><div class="time">18:20–19:40</div><div class="title">🥩 韓牛晚餐</div></article><article class="stop"><div class="time">19:40–21:30</div><div class="title">🛍️ 市區逛街／伴手禮</div></article><article class="stop"><div class="time">21:30 起</div><div class="title">🍺 宵夜／喝酒</div></article>
-</div></section>
-
-<section class="day" id="d4"><div class="dayhead"><h2>DAY 4 · 9/21</h2><span>城山 → 咸德 → 機場</span></div><div class="route">
-<article class="stop"><div class="time">07:20 · 車程 50–70 分</div><div class="title">🚗 Villa → A Audrant Bakery</div></article><article class="stop"><div class="time">08:20–09:10</div><div class="title">🥖 A Audrant Bakery 咸德店</div><div class="detail">大蒜麵包早餐。</div></article><article class="stop drive"><div class="time">09:10 · 車程 15–25 分</div><div class="title">🚗 → 城山日出峰</div></article><article class="stop"><div class="time">09:35–11:00</div><div class="title">🌋 城山日出峰</div></article><article class="stop drive"><div class="time">11:00 · 車程 5–15 分</div><div class="title">🚗 → 本然黑豬肉</div></article><article class="stop"><div class="time">11:15–12:30</div><div class="title">🐷 本然黑豬肉 午餐</div></article><article class="stop drive"><div class="time">12:30 · 車程 25–35 分</div><div class="title">🚗 → Snoopy Garden</div></article><article class="stop"><div class="time">13:05–15:30</div><div class="title">🥜 Snoopy Garden</div></article><article class="stop drive"><div class="time">15:30 · 車程 20–30 分</div><div class="title">🚗 → 咸德沙灘</div></article><article class="stop"><div class="time">16:00–17:00</div><div class="title">🏖️ 咸德沙灘（可彈性刪除）</div></article><article class="stop"><div class="time">17:30–18:40</div><div class="title">🍲 馬鈴薯排骨湯 晚餐</div></article><article class="stop drive"><div class="time">18:40 · 車程 30–45 分</div><div class="title">🚗 → 濟州機場</div></article><article class="stop"><div class="time">19:30–20:00</div><div class="title">✈️ 到機場・還車／報到</div></article>
-</div></section>
-
-<section class="section" id="eat"><h2>這趟必吃清單</h2><div class="grid"><div class="rec"><h3>🥩 黑豬肉＋멜젓</h3><p>第 2 天豬肉一條街／第 4 天本然黑豬肉。濟州黑豬肉蘸鯷魚醬是官方旅遊資訊推薦的在地搭配。</p></div><div class="rec"><h3>🐟 白帶魚、鮑魚與海鮮湯</h3><p>第 1 天海鮮湯、第 2 天白帶魚已排入；看到鮑魚粥或烤鮑魚也值得加點。</p></div><div class="rec"><h3>🥜 牛島花生冰淇淋</h3><p>第 3 天牛島小點；控制在 13:00 前回碼頭即可。</p></div><div class="rec"><h3>🍊 柑橘系甜點／飲料</h3><p>市場、咖啡廳可找漢拏峰／柑橘果汁、巧克力與柑橘茶。</p></div></div><p class="sources">參考：<a target="_blank" href="https://english1.visitkorea.or.kr/enu/FOD/FO_ENG_3_4_2.jsp">韓國觀光公社濟州美食地圖</a>、<a target="_blank" href="https://www.google.com/maps/search/Dinner%2Bat%2BOlle%2BMarket%2C%2BSeogwipo%2C%2BSouth%2BKorea">Google 地圖：偶來市場附近餐廳</a></p></section>
-<section class="section" id="buy"><h2>必買・必玩</h2><div class="grid"><div class="rec"><h3>🛍️ 市場採買</h3><p><b>柑橘／漢拏峰製品</b>：果汁、果乾、巧克力、茶；<b>Omegi 年糕</b>：適合當日吃或詢問保存方式；也可找石頭爺爺小物。</p></div><div class="rec"><h3>🍶 濟州限定飲品</h3><p>想嚐鮮可找漢拏山燒酒、牛島花生馬格利酒；開車者請勿飲酒。</p></div><div class="rec"><h3>🏎️ 已排入的必玩</h3><p>9.81 Park 賽車、牛島環島、城山日出峰、Snoopy Garden、濟州亂打秀。</p></div></div><p class="sources">參考：<a target="_blank" href="https://english1.visitkorea.or.kr/enu/ATR/SI_EN_3_6.jsp?cid=2675126">韓國觀光公社：濟州限定必買</a>、<a target="_blank" href="https://www.visitjeju.net/en/detail/view?contentsid=CNTS_300000000012883">Visit Jeju：牛島伴手禮</a></p></section>
-<section class="section" id="tips"><h2>出發前 30 秒</h2><div class="rec"><ul class="check"><li>每天早上以 Google Maps／Naver Map 重查車程與店休。</li><li>9/20 先確認牛島海況、最後登船與車輛登船規則。</li><li>亂打秀提早至少 30–60 分到附近；第 3 天午餐不要排正式餐廳。</li><li>市場買生鮮、冷藏食品前，先確認保冷與托運限制。</li><li>租車還車前加滿油，保留 19:30 前到機場的緩衝。</li></ul></div></section>
-<footer>濟州島 4 日自駕 · 行程依提供文件整理 · 更新日期：2026-08-20</footer></main>
-<script>
-  // 行程站點改用 Naver Map；推薦卡片標題則開 Google Maps 搜尋／評論頁。
-  document.querySelectorAll('.map').forEach((link) => {
-    const google = new URL(link.href);
-    const query = google.searchParams.get('query') || link.closest('.stop').querySelector('.title')?.textContent || '';
-    link.href = 'https://map.naver.com/p/search/' + encodeURIComponent(query);
-    link.textContent = 'Naver 地圖';
-  });
-  const queries = {
-    '黑豬肉＋멜젓': '제주 흑돼지',
-    '白帶魚、鮑魚與海鮮湯': '제주 갈치조림 전복죽',
-    '牛島花生冰淇淋': 'Udo Peanut Ice Cream',
-    '柑橘系甜點／飲料': 'Jeju Hallabong Dessert',
-    '市場採買': 'Jeju Souvenir Hallabong Omegi Tteok',
-    '濟州限定飲品': 'Jeju Hallasan Soju Udo Peanut Makgeolli',
-    '已排入的必玩': 'Jeju 9.81 Park Snoopy Garden Nanta'
-  };
-  document.querySelectorAll('.rec h3').forEach((heading) => {
-    const text = heading.textContent.trim();
-    const key = Object.keys(queries).find((name) => text.includes(name));
-    if (!key) return;
-    const link = document.createElement('a');
-    link.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(queries[key]);
-    link.target = '_blank'; link.rel = 'noopener'; link.textContent = text + ' ↗';
-    heading.replaceChildren(link);
-  });
-</script>
-</body></html>
+  <header class="hero"><div class="eyebrow">18–21 SEP · JEJU SELF-DRIVE</div><h1>濟州島<br>4日慢慢玩</h1><p>手機行程本｜每個地點一鍵開啟 Naver Map</p></header>
+  <nav class="tabs"><a href="#d1">DAY 1</a><a href="#d2">DAY 2</a><a href="#d3">DAY 3 ⚠︎</a><a href="#d4">DAY 4</a><a href="#guide">推薦</a></nav>
+  <main>
+    <div class="notice">出發前請再確認店家營業時間、天氣與牛島船班。Naver Map 適合在韓國導航；「Google Maps」按鈕用於查看評價、照片與備選地點。</div>
+    <section class="day" id="d1"><div class="day-head"><div class="badge">DAY<br>01</div><div><h2>9/18｜機場 → 西歸浦</h2><p>抵達後一路往西南，節奏舒適</p></div></div><div class="timeline" id="day1"></div></section>
+    <section class="day" id="d2"><div class="day-head"><div class="badge">DAY<br>02</div><div><h2>9/19｜9.81 → 涯月 → 市區</h2><p>咖啡只選一間，才會玩得從容</p></div></div><div class="timeline" id="day2"></div></section>
+    <section class="day" id="d3"><div class="day-head"><div class="badge">DAY<br>03</div><div><h2>9/20｜牛島 → 亂打秀</h2><p>本趟唯一必須看手錶的一天</p></div></div><div class="alert"><b>時間死線：</b>13:00 從牛島搭船回程，約 13:30 離開城山港；最晚 15:30 入場，16:30 亂打秀。</div><div class="timeline" id="day3"></div></section>
+    <section class="day" id="d4"><div class="day-head"><div class="badge">DAY<br>04</div><div><h2>9/21｜城山 → Snoopy → 機場</h2><p>最後一天保留機場緩衝時間</p></div></div><div class="timeline" id="day4"></div></section>
+    <section class="guide" id="guide"><h2>順路加碼：景點、必吃、必買</h2><p>每一項附 Google Maps 搜尋連結；以當下評價、營業時間與距離挑選。</p><div id="recommendations"></div><p class="footer">路線與時間依提供文件整理。景點補充參考 <a href="https://www.visitjeju.net/en/detail/view?contentsid=CNTS_000000000020159" target="_blank" rel="noopener">Visit Jeju 的涯月 Handam 海岸步道</a> 與 <a href="https://www.visitjeju.net/en/themtour/view?contentsid=CNTS_300000000012882&menuId=DOM_200000000011166" target="_blank" rel="noopener">市場購物指南</a>；店家資訊請出發前再次確認。</p></section>
+  </main>
+  <script>
+    const g=q=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q), n=q=>'https://map.naver.com/p/search/'+encodeURIComponent(q);
+    const stop=(x)=>`<article class="stop"><div class="time">${x.time}</div><div class="title">${x.icon||''} ${x.name}</div><p class="meta">${x.detail||''}</p><div class="chips"><a class="chip map" target="_blank" rel="noopener" href="${n(x.q||x.name)}">Naver Map ↗</a>${x.google===false?'':`<a class="chip" target="_blank" rel="noopener" href="${g(x.q||x.name)}">Google Maps</a>`}${x.link?`<a class="chip insta" target="_blank" rel="noopener" href="${x.link}">原始分享 ↗</a>`:''}</div></article>`;
+    const days={
+      day1:[
+        {time:'06:00–08:00',icon:'✈️',name:'濟州機場・入境・取車',detail:'預留約 2 小時',q:'Jeju International Airport'},
+        {time:'09:00–10:00',icon:'☕',name:'Haegigae Cafe 早餐',detail:'機場出發約 35–45 分；09:00 開門',q:'해지개카페 제주',link:'https://www.instagram.com/reel/DWlAhoTgRd8/?igsh=MW5yODNvejE4aWJvNw=='},
+        {time:'10:35–11:30',icon:'🦐',name:'三姓穴海鮮湯',detail:'開車約 30–35 分；10:00 開門',q:'삼성혈 해물탕 제주'},
+        {time:'12:20–14:00',icon:'🌺',name:'山茶花之丘 Camellia Hill',detail:'開車約 45–55 分；建議 14:00 前離開',q:'카멜리아힐 제주'},
+        {time:'14:25–15:30',icon:'☕',name:'橘花閣樓咖啡廳',detail:'開車約 20–25 分',q:'귤꽃다락 제주',link:'https://www.instagram.com/p/DUkEyRjiZma/?img_index=5&igsh=b2VkcG5qaDh5NDNr'},
+        {time:'15:50–18:30',icon:'🛍️',name:'西歸浦每日偶來市場・晚餐',detail:'紫菜飯捲、麻糬與市場小吃',q:'서귀포 매일 올레시장'},
+        {time:'19:00',icon:'🏠',name:'Check-in・濟州 Memory 泳池別墅',detail:'從市場約 10–30 分',q:'제주 memory pool villa'}],
+      day2:[
+        {time:'08:00',icon:'🏪',name:'超商早餐',detail:'簡單吃，08:30 出發',q:'CU Jeju'},
+        {time:'09:30–12:00',icon:'🏎️',name:'9.81 Park',detail:'第一晚住宿出發約 40–60 分',q:'9.81 Park Jeju',link:'https://www.instagram.com/reel/C-prbHlP7Vn/?igsh=MTdiNWowc3NwY2JjeA=='},
+        {time:'12:25–13:30',icon:'🐟',name:'帶魚館 涯月海岸道路店',detail:'開車約 15–25 分',q:'갈치관 애월해안도로점'},
+        {time:'15:20–15:50',icon:'🐬',name:'海豚公路',detail:'咖啡後開車約 10–20 分；留意海況與觀賞距離',q:'애월 해안도로 제주'},
+        {time:'16:10–17:00',icon:'🏠',name:'Villa Check-in・休息',detail:'海豚公路出發約 10–20 分',q:'Jeju Memory Pool Villa'},
+        {time:'17:40–18:20',icon:'🐴',name:'小馬燈塔＋彩虹海岸道路',detail:'開車約 30–40 分',q:'이호테우 말등대 제주'},
+        {time:'18:45–20:00',icon:'🥩',name:'黑豬肉一條街・晚餐',detail:'小馬燈塔出發約 15–25 分',q:'제주 흑돼지거리'},
+        {time:'20:00–21:00',icon:'🛍️',name:'東門市場',detail:'步行／開車約 5–10 分',q:'동문시장 제주'},
+        {time:'22:00 後',icon:'🍗',name:'BHC 宵夜（看體力）',detail:'找濟州限定口味',q:'BHC Chicken Jeju'}],
+      day3:[
+        {time:'08:00–09:00',icon:'🥯',name:'London Bagel Museum Jeju',detail:'Villa 出發約 50–70 分；08:00 開門',q:'런던베이글뮤지엄 제주',link:'https://www.instagram.com/reel/CyNzXjURyJx/?igsh=azRsM2M1eGZzbnl6'},
+        {time:'09:40–10:00',icon:'🚢',name:'城山港・準備搭船',detail:'Bagel 店出發約 25–35 分',q:'성산포항 여객터미널'},
+        {time:'10:15–13:00',icon:'🏝️',name:'牛島',detail:'花生冰淇淋、環島；13:00 務必搭船回程',q:'Udo Island Jeju'},
+        {time:'13:30–15:30',icon:'🚗',name:'城山港 → 亂打劇場',detail:'車程約 1 小時；抵達附近先簡單休息／用餐',q:'Jeju NANTA Theatre'},
+        {time:'16:30–17:50',icon:'🎭',name:'濟州亂打秀 NANTA',detail:'建議 15:30 前入場',q:'Jeju NANTA Theatre'},
+        {time:'18:20–19:40',icon:'🥩',name:'韓牛晚餐',detail:'劇場周邊挑選評價佳店家',q:'Jeju Hanwoo Restaurant'},
+        {time:'19:40–21:30',icon:'🛍️',name:'市區逛街・伴手禮',detail:'東門市場／七星路皆可',q:'Chilsungro Shopping Town Jeju'},
+        {time:'21:30 後',icon:'🍺',name:'宵夜・喝酒',detail:'依住宿位置就近選擇',q:'Jeju City Pub'}],
+      day4:[
+        {time:'08:20–09:10',icon:'🥖',name:'A Audrant Bakery 咸德店',detail:'大蒜麵包早餐；Villa 出發約 50–70 分',q:'오드랑베이커리 함덕점'},
+        {time:'09:35–11:00',icon:'🌋',name:'城山日出峰',detail:'開車約 15–25 分',q:'Seongsan Ilchulbong'},
+        {time:'11:15–12:30',icon:'🐷',name:'本然黑豬肉',detail:'開車約 5–15 分',q:'본연 흑돼지 제주'},
+        {time:'13:05–15:30',icon:'🐶',name:'Snoopy Garden',detail:'開車約 25–35 分',q:'Snoopy Garden Jeju'},
+        {time:'16:00–17:00',icon:'🏖️',name:'咸德沙灘（可略過）',detail:'開車約 20–30 分；想保留更多機場緩衝可跳過',q:'Hamdeok Beach'},
+        {time:'17:30–18:40',icon:'🍲',name:'馬鈴薯排骨湯・晚餐',detail:'咸德出發約 15–30 分',q:'Hamdeok Gamjatang'},
+        {time:'19:30–20:00',icon:'✈️',name:'濟州機場',detail:'還車／報到；建議至少保留 20:00 後緩衝',q:'Jeju International Airport'}]};
+    Object.entries(days).forEach(([id,items])=>document.getElementById(id).innerHTML=items.map(stop).join(''));
+    const recs=[
+      ['📍 順路景點｜涯月 Handam 海岸步道','第二天下午若還有時間，可在涯月安排 30–45 分鐘海邊散步；是從涯月港往郭支海灘的海岸步道。','Aewol Handam Coastal Trail'],
+      ['🥢 必吃｜市場小食清單','西歸浦偶來市場：海鮮、黑豬肉與在地水果小吃；東門市場：晚間小食與伴手禮。建議先用 Google Maps 看當下評價與營業時間。','Seogwipo Maeil Olle Market','Dongmun Traditional Market Jeju'],
+      ['🥜 必買｜牛島花生系','牛島花生冰淇淋現吃；花生巧克力、花生馬格利酒適合帶回。第三天在牛島購買最順路。','Udo Peanut Ice Cream','Udo Peanut Souvenir'],
+      ['🍊 必買｜濟州柑橘與茶','漢拏峰／柑橘巧克力、果乾、果汁可在兩大市場比價；想買茶可加選 O’Sulloc Tea Museum 或市區專櫃。','Osulloc Tea Museum Jeju','Jeju Tangerine Souvenir'],
+      ['🎁 伴手禮最後補貨｜七星路','第三天亂打秀後可逛七星路，距東門市場很近，適合補 K-beauty、設計小物與零食。','Chilsungro Shopping Town Jeju']];
+    document.getElementById('recommendations').innerHTML=recs.map(([t,d,...qs])=>`<article class="recommend"><h3>${t}</h3><p>${d}</p><div class="rec-links">${qs.map(q=>`<a target="_blank" rel="noopener" href="${g(q)}">Google Maps：${q} ↗</a>`).join('')}</div></article>`).join('');
+  </script>
+</body>
+</html>
