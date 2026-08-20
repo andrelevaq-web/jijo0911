@@ -54,4 +54,31 @@
 <section class="section" id="buy"><h2>必買・必玩</h2><div class="grid"><div class="rec"><h3>🛍️ 市場採買</h3><p><b>柑橘／漢拏峰製品</b>：果汁、果乾、巧克力、茶；<b>Omegi 年糕</b>：適合當日吃或詢問保存方式；也可找石頭爺爺小物。</p></div><div class="rec"><h3>🍶 濟州限定飲品</h3><p>想嚐鮮可找漢拏山燒酒、牛島花生馬格利酒；開車者請勿飲酒。</p></div><div class="rec"><h3>🏎️ 已排入的必玩</h3><p>9.81 Park 賽車、牛島環島、城山日出峰、Snoopy Garden、濟州亂打秀。</p></div></div><p class="sources">參考：<a target="_blank" href="https://english1.visitkorea.or.kr/enu/ATR/SI_EN_3_6.jsp?cid=2675126">韓國觀光公社：濟州限定必買</a>、<a target="_blank" href="https://www.visitjeju.net/en/detail/view?contentsid=CNTS_300000000012883">Visit Jeju：牛島伴手禮</a></p></section>
 <section class="section" id="tips"><h2>出發前 30 秒</h2><div class="rec"><ul class="check"><li>每天早上以 Google Maps／Naver Map 重查車程與店休。</li><li>9/20 先確認牛島海況、最後登船與車輛登船規則。</li><li>亂打秀提早至少 30–60 分到附近；第 3 天午餐不要排正式餐廳。</li><li>市場買生鮮、冷藏食品前，先確認保冷與托運限制。</li><li>租車還車前加滿油，保留 19:30 前到機場的緩衝。</li></ul></div></section>
 <footer>濟州島 4 日自駕 · 行程依提供文件整理 · 更新日期：2026-08-20</footer></main>
+<script>
+  // 行程站點改用 Naver Map；推薦卡片標題則開 Google Maps 搜尋／評論頁。
+  document.querySelectorAll('.map').forEach((link) => {
+    const google = new URL(link.href);
+    const query = google.searchParams.get('query') || link.closest('.stop').querySelector('.title')?.textContent || '';
+    link.href = 'https://map.naver.com/p/search/' + encodeURIComponent(query);
+    link.textContent = 'Naver 地圖';
+  });
+  const queries = {
+    '黑豬肉＋멜젓': '제주 흑돼지',
+    '白帶魚、鮑魚與海鮮湯': '제주 갈치조림 전복죽',
+    '牛島花生冰淇淋': 'Udo Peanut Ice Cream',
+    '柑橘系甜點／飲料': 'Jeju Hallabong Dessert',
+    '市場採買': 'Jeju Souvenir Hallabong Omegi Tteok',
+    '濟州限定飲品': 'Jeju Hallasan Soju Udo Peanut Makgeolli',
+    '已排入的必玩': 'Jeju 9.81 Park Snoopy Garden Nanta'
+  };
+  document.querySelectorAll('.rec h3').forEach((heading) => {
+    const text = heading.textContent.trim();
+    const key = Object.keys(queries).find((name) => text.includes(name));
+    if (!key) return;
+    const link = document.createElement('a');
+    link.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(queries[key]);
+    link.target = '_blank'; link.rel = 'noopener'; link.textContent = text + ' ↗';
+    heading.replaceChildren(link);
+  });
+</script>
 </body></html>
